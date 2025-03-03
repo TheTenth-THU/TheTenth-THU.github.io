@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Web Page - Your Name</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="pageHeader">
+        <div class="top-info">
+            <p class="nav-links">
+                | <a href="#about">About</a> |
+                <a href="#projects">Projects</a> |
+                <a href="#publications">Publications</a> |
+                <a href="#contact">Contact</a> |
+            </p>
+            <h1>Zhen-Xing CHEN  陈禛兴</h1>
+            <p>
+                Department of Electronic Engineering<br>
+                Tsinghua University
+            </p>
+        </div>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Your Logo" width="100">
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                CHEN Zhen-Xing (or spelled as <span class="italic">Zhenxing Chen</span> according to more general norms currently) is an undergraduate student in the Department of Electronic Engineering, Tsinghua University. Recently he is working on the research of Vision-and-Language Navigation (VLN).
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <ul>
+                <li>
+                    <h4>
+                        <span class="italic">[Ongoing]</span> Perception, Planning and Interaction: Autonomous Vision-and-Language Navigation for Embodied Spatial Intelligence in Complex Open Environments
+                    </h4>
+                    <p>
+                        <strong>PePI</strong> is a project that aims to develop a comprehensive framework for autonomous vision-and-language navigation (VLN) in complex open environments. <br>
+                        The project is supported by <a href="https://fi.ee.tsinghua.edu.cn/">FIBLAB</a>, and supervised by <a href="https://vonfeng.github.io/">Dr. Jie Feng</a>.
+                    </p>
+                    <div class="pic-insert">
+                        <img src="assets/demonstration.gif" alt="Street simulator for vision-and-language navigation" width="750">
+                        <p>
+                            Street simulator for vision-and-language navigation.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>
+                None uploaded yet. You can check back later.
+            </p>
+            <!-- <ul>
+                <li>
+                    None uploaded yet. You can check back later.
+                </li>
+            </ul> -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                You can reach me via email: <a href="mailto:zhenxing23@mails.tsinghua.edu.cn">zhenxing23@mails.tsinghua.edu.cn</a>
+            </p>
+        </section>
+    </main>
+    <script>
+        // Shrink header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('pageHeader');
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+        });
+    </script>
+</body>
+</html>
